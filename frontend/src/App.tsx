@@ -3,6 +3,8 @@ import NavBar from './components/NavBar'
 import AllEntries from './routes/AllEntries'
 import NewEntry from './routes/NewEntry'
 import EditEntry from './routes/EditEntry'
+import Settings from './routes/Settings'
+
 import { EntryProvider } from './utilities/globalContext'
 import {
   BrowserRouter as Router,
@@ -23,7 +25,7 @@ export default function App() {
         </Route>
         <Route path="edit/:id" element={<EditEntry/>}>
         </Route>
-        <Route path="settings" element={<NewEntry/>}>
+        <Route path="settings" element={<Settings/>}>
         </Route>
       </Routes>
     </EntryProvider>
