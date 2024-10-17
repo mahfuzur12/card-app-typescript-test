@@ -23,6 +23,8 @@ export default function App() {
         </Route>
         <Route path="edit/:id" element={<EditEntry/>}>
         </Route>
+        <Route path="settings" element={<NewEntry/>}>
+        </Route>
       </Routes>
     </EntryProvider>
     </Router>
