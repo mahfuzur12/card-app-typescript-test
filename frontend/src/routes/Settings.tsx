@@ -7,7 +7,6 @@ export default function Settings() {
 
   const handleToggleDarkMode = () => {
     setIsDarkModeEnabled(!isDarkModeEnabled);
-    console.log(isDarkModeEnabled? 'On' : 'Off')
   };
 
   return (
@@ -15,7 +14,7 @@ export default function Settings() {
       onClick={handleToggleDarkMode}
       className="flex items-center justify-center w-fit ml-auto mr-auto mt-10 gap-5 bg-gray-300 p-8 rounded-md"
     >
-      {isDarkModeEnabled ? <MdDarkMode size={40} /> : <MdLightMode size={40} />}
+      {isDarkModeEnabled ? <MdLightMode size={40} /> : <MdDarkMode size={40} />}
     </button>
   );
 }
