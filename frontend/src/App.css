@@ -5,3 +5,7 @@
 body {
     @apply w-screen h-screen m-0 p-0;
 }
+
+.dark {
+    background-color: #333;
+  }
